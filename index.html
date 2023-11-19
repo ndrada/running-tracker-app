@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Running Tracker</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Comfortaa:wght@300;500;700&family=Pangolin&family=Raleway:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="first">
+        <div class="logo">
+            <h1>RUNNING TRACKER</h1>
+            <img src="/running.png" alt="">
+        </div>
+        <form class="form-on-image">
+            <label for="entry">MILES TODAY</label>
+            <br>
+            <input type="number" id="entry" step="0.1"/>
+            <br>
+            <button type="Submit">Add</button>
+        </form>
+    </div>
+    <section class="entriesWrapper">
+        <h3>Last 7 days</h3>
+        <ul id="entries">
+            <li>-</li>
+            <li>-</li>
+            <li>-</li>
+            <li>-</li>
+            <li>-</li>
+            <li>-</li>
+            <li>-</li>
+        </ul>
+    </section>
+    <section class="data">
+        <div>
+            <p>Total</p>
+            <p id="total">0</p>
+        </div>
+        <div>
+            <p>Average</p>
+            <p id="average">0</p>
+        </div>
+        <div>
+            <p>This week's high</p>
+            <p id="high">0</p>
+        </div>
+    </section>
+    <section class="progress">
+        <h3>Weekly target: 
+            <span id="progressTotal">0</span> / <span id="target">25</span> miles
+        </h3>
+        <div class="progressCircleWrapper">
+            <!-- TO DO -->
+        </div>
+    </section>
+    <script src="/script.js"></script>
+</body>
+<footer>
+    <a href="https://www.flaticon.com/free-animated-icons/trail-running" title="trail running animated icons">Trail running animated icons created by Freepik - Flaticon</a>
+</footer>
+</html>
