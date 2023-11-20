@@ -50,16 +50,27 @@
         </div>
     </section>
     <section class="progress">
-        <h3>Weekly target: 
-            <span id="progressTotal">0</span> / <span id="target">25</span> miles
-        </h3>
-        <div class="progressCircleWrapper">
-            <!-- TO DO -->
+        <div class="setTarget">
+            <h3>Weekly target: 
+                <span id="progressTotal">0</span> / <span id="target">25</span> miles
+            </h3>
+        </div>
+        <div class="targetMet">
+            <h3>Congrats! You reached your goal this week!</h3>
+            <button class="newWeek" onclick="newWeek()">New week</button>
+        </div>
+        <div class="targetExceeded">
+            <h3>Wow! You ran more than your goal! Congrats!</h3>
+            <button class="newWeek" onclick="newWeek()">New week</button>
+        </div>
+        <div class="targetNotMet">
+            <h3>Keep up the good work! Set a new goal for next week!</h3>
+            <button class="newWeek" onclick="newWeek()">New week</button>
+        </div>
+        <div class="progressBarContainer">
+            <div id="progressBar" class="progressBar"></div>
         </div>
     </section>
     <script src="/script.js"></script>
 </body>
-<footer>
-    <a href="https://www.flaticon.com/free-animated-icons/trail-running" title="trail running animated icons">Trail running animated icons created by Freepik - Flaticon</a>
-</footer>
 </html>
